@@ -1,0 +1,3 @@
+let NERDTreeWinSize = 40
+colorscheme solarized
+set tags=./tags;/
