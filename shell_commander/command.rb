@@ -1,5 +1,6 @@
 module ShellCommander
   class Command
+<<<<<<< HEAD
     PRE_INSTALL  = 'PRE_INSTALL'
     INSTALL = 'INSTALL'
     POST_INSTALL = 'POST_INSTALL'
@@ -11,6 +12,8 @@ module ShellCommander
     def run
       exec exec_string
     end
+=======
+>>>>>>> parent of 14e8fc9... add installation steps
 
   end
 end
