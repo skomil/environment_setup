@@ -1,4 +1,0 @@
-let NERDTreeWinSize = 40
-colorscheme monokai
-set tags=./tags;/
-set t_Co=256
