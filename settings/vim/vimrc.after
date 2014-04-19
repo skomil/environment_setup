@@ -1,5 +1,5 @@
 let NERDTreeWinSize = 40
 colorscheme monokai
 execute "!ctags -R *"
-set tags=./tags;/
+set tags=./tags,/,$ENV_SETUP/settings/vim/gemtags;
 set t_Co=256

@@ -6,3 +6,5 @@ rm .janus
 ::link
 ln -s environment_setup/settings/vim/vimrc.after ~/.vimrc.after
 ln -s environment_setup/settings/vim/janus ~/.janus
+::reindex
+ctags -f $ENV_SETUP/settings/vim/gemtags -R --exclude=.git --exclude=log $(rvm gemdir)

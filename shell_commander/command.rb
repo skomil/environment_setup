@@ -6,7 +6,9 @@ module ShellCommander
     INSTALL = 'INSTALL'
     #link files/directories with environment setup
     LINK = 'LINK'
-    ALL_ACTIONS = [UNLINK,INSTALL,LINK]
+    #Rerun indexing tasks. Rerun periodically to get latest tags and data added to environment setup
+    REINDEX = 'REINDEX'
+    ALL_ACTIONS = [UNLINK,INSTALL,LINK,REINDEX]
     attr_reader :action,:exec_string
     attr_accessor :dry_run,:run_dir
     def initialize(exec_string,action=INSTALL)

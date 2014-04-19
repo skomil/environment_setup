@@ -17,6 +17,9 @@ end
 task :unlink do
   ShellCommander::FileInstaller.new([ShellCommander::Command::UNLINK])
 end
+task :reindex do
+  ShellCommander::FileInstaller.new([ShellCommander::Command::REINDEX])
+end
 task :dry_run do
   ShellCommander::FileInstaller.new(ShellCommander::Command::ALL_ACTIONS,true)
 end
