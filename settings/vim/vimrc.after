@@ -1,4 +1,5 @@
 let NERDTreeWinSize = 40
 colorscheme monokai
+execute "!ctags -R *"
 set tags=./tags;/
 set t_Co=256

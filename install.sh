@@ -12,3 +12,5 @@ then
 else
   echo 'Development Environment is already installed.'
 fi
+install_ruby.sh
+rake install
