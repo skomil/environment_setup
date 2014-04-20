@@ -1,2 +1,5 @@
 tags
 settings/vim/gemtags
+utilities/*
+!utilities/README.md
+

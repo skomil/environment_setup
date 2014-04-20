@@ -1,5 +1,9 @@
 ::install
 curl -Lo- https://bit.ly/janus-bootstrap | bash
+::install_darwin
+brew install ctags-exuberant
+::install_ubuntu
+sudo apt-get install exuberant-ctags
 ::unlink
 rm .vimrc.after
 rm .janus
