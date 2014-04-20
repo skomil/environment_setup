@@ -1,2 +1,3 @@
+#Install color utility to ensure shell displays 256 colors
 curl http://robotsrule.us/vim/256colors.txt >> $ENV_SETUP/utilities/256_color_test.pl
 chmod a+x $ENV_SETUP/utilities/256_color_test.pl
