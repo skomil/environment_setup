@@ -11,3 +11,5 @@ sudo apt-get install npm
 npm config set registry http://registry.npmjs.org/
 #yeoman installation
 sudo npm install -g yo
+#grunt connection proxy
+sudo npm install grunt-connect-proxy --save-dev
