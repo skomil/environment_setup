@@ -2,3 +2,4 @@ let NERDTreeWinSize = 40
 colorscheme monokai
 set tags=./tags,/,$ENV_SETUP/settings/vim/gemtags;
 set t_Co=256
+set wrap
