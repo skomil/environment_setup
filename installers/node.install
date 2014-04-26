@@ -1,7 +1,13 @@
 ::install_darwin
 brew install node
+brew install npm
 ::install_ubuntu
+sudo apt-get install python-software-properties python g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
 sudo apt-get install nodejs
+sudo apt-get install npm
 ::install
+npm config set registry http://registry.npmjs.org/
 #yeoman installation
-npm install -g yo
+sudo npm install -g yo
