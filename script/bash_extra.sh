@@ -19,7 +19,26 @@ function vim_tags {
   ctags -R *
   vim .
 }
-
+function commander_install {
+  commander_rake install $1
+}
+function commander_dry_run {
+  commander_rake dry_run $1
+}
+function commander_relink {
+  commander_rake relink $1
+}
+function commander_rake {
+  local curdir=$(eval pwd)
+  cd $ENV_SETUP
+  if [ "$2" == "" ]
+  then
+    rake $1
+  else
+    rake $1[$2]
+  fi
+  cd $curdir
+}
 echo '*****************************************************'
 echo '*          ** Skomil Environment setup **           *'
 echo '*****************************************************'
