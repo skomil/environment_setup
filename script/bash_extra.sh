@@ -13,7 +13,8 @@ if [ "$(eval uname -a | grep Ubuntu)" ]
 then
   export PLATFORM=UBUNTU
 fi
-
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+rvm use default@rails4
 function vim_tags {
   ctags -R *
   vim .
