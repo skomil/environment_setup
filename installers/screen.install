@@ -4,6 +4,8 @@ rm .screenrc
 ln -s environment_setup/settings/screenrc ~/.screenrc
 ::install_darwin
 #install the brew version on macs. 256 colors not supported by built in version
+brew install coreutils
+brew tap homebrew/dupes
 brew install screen
 ::install_ubuntu
 sudo apt-get install screen
