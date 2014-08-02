@@ -3,6 +3,8 @@ function memcached_serve {
   then
     /usr/local/opt/memcached/bin/memcached &
     telnet localhost 11211
+  else
+    echo "Platform Not Supported"
   fi
 
 }
