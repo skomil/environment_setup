@@ -39,6 +39,8 @@ function commander_rake {
   fi
   cd $curdir
 }
+#include other files
+source $ENV_SETUP/script/server_commands.sh
 echo '*****************************************************'
 echo '*          ** Skomil Environment setup **           *'
 echo '*****************************************************'

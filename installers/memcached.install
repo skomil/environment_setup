@@ -1,0 +1,3 @@
+#installer for mac
+::install_darwin
+brew install memcached
