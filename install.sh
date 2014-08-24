@@ -19,7 +19,9 @@ if [ "$(eval uname -a | grep Darwin)" ]
 then
   ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 fi
-
+#checkout submodules
+git submodule init
+git submodule update
 #run shell commander installation
 rake install
 

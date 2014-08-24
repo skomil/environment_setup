@@ -8,3 +8,6 @@ function memcached_serve {
   fi
 
 }
+function mongod_dev {
+   mongod --dbpath ~/local_dev/mongo_data/
+}
