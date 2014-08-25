@@ -22,6 +22,8 @@ fi
 #checkout submodules
 git submodule init
 git submodule update
+#add local directory
+mkdir ~/local_dev
 #run shell commander installation
 rake install
 

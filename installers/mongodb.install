@@ -1,3 +1,4 @@
 #only install mac version, install ubuntu/linux manually
 ::install_darwin
+mkdir ~/local_dev/mongo_data
 brew install mongodb --with-openssl
