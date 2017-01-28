@@ -12,18 +12,5 @@ then
 else
   echo 'Development Environment is already installed.'
 fi
-~/environment_setup/script/install_ruby.sh
-
-#If on a mac, install homebrew
-if [ "$(eval uname -a | grep Darwin)" ]
-then
-  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-fi
-#checkout submodules
-git submodule init
-git submodule update
-#add local directory
-mkdir ~/local_dev
-#run shell commander installation
+install_ruby.sh
 rake install
-
